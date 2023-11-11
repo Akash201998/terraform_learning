@@ -19,8 +19,13 @@ variable "jedi" {
      filename = "/root/first-jedi"
      content = "phanius"
      }
-  
-}
+#Passing map values in resource block
+/*resource "local_file" "jedi" {
+     filename = var.jedi["filename"]
+     content = var.jedi["content"]
+}  
+}*/
+
 
 variable "gender" {
      type = list(string)
